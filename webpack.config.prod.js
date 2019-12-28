@@ -17,6 +17,7 @@ module.exports = {
   ],
   module: {
     rules: [
+      ...base.module.rules,
       {
         test: /\.css$/, //正则表达式，匹配所有以.css结尾的文件
         use: [
